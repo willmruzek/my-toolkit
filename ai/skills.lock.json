@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "commit": "01d3fafeca1133f841956b8b90b939fee92d71e7",
+      "files": {
+        "SKILL.md": "b8b09677015fcb6540fb56376741589838ca6ada277f928a1627a5a90f54b6e4"
+      },
+      "importedAt": "2026-04-13T11:02:24.817Z",
+      "name": "conventional-commits",
+      "path": "community/jamie-bitflight-claude-skills/conventional-commits",
+      "repo": "https://github.com/BbgnsurfTech/claude-skills-collection.git",
+      "updatedAt": "2026-04-13T11:02:24.817Z"
+    },
+    {
+      "name": "find-skills",
+      "repo": "https://github.com/vercel-labs/skills.git",
+      "path": "skills/find-skills",
+      "commit": "df0579f85cb8a360473c921e1343359006100d3c",
+      "importedAt": "2026-04-11T15:12:13.808Z",
+      "updatedAt": "2026-04-11T15:12:13.808Z"
+    }
+  ]
+}
