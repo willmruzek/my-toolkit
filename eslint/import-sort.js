@@ -55,7 +55,7 @@ export const importSortConfig = {
           },
           {
             groupName: 'parent-3-plus',
-            elementNamePattern: '^\\.\\.\\/\\.\\.\\/\\.\\.\\/',
+            elementNamePattern: '^(?:\\.\\.\\/){3,}',
           },
           {
             groupName: 'parent-2',
