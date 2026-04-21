@@ -10,3 +10,7 @@ agents:
 # Generate Commit Message
 
 Use `conventional-commits` skill to generate a commit message for the staged changes in git (`git diff --staged`).
+
+NEVER commit for me unless I ask you to.
+
+Give me the message in a Markdown code block.
