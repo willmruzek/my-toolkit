@@ -55,15 +55,15 @@ export const importSortConfig = {
           },
           {
             groupName: 'parent-3-plus',
-            elementNamePattern: '^\.\.\/\.\.\/\.\.\/',
+            elementNamePattern: '^\\.\\.\\/\\.\\.\\/\\.\\.\\/',
           },
           {
             groupName: 'parent-2',
-            elementNamePattern: '^\.\.\/\.\.\/',
+            elementNamePattern: '^\\.\\.\\/\\.\\.\\/',
           },
           {
             groupName: 'parent-1',
-            elementNamePattern: '^\.\.\/',
+            elementNamePattern: '^\\.\\.\\/',
           },
           {
             groupName: 'style',
