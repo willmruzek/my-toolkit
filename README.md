@@ -15,7 +15,28 @@ Agent configurations, skills, and guidelines for consistent AI-assisted developm
 
 ### `eslint/`
 
-Reusable ESLint configurations (coming soon).
+Reusable ESLint flat configs exported from `@willmruzek/my-toolkit/eslint`.
+
+- `recommended` — TypeScript ESLint recommended type-checked rules plus import sorting
+- `strict` — TypeScript ESLint strict type-checked rules plus import sorting
+
+Both presets enable `parserOptions.projectService: true` and automatically disable type-aware rules for JavaScript files (such as config scripts).
+
+Import sorting is limited to imports and groups them in this order:
+
+- side effects
+- `node:*`
+- React packages
+- external packages
+- `@/*`
+- `#*`
+- `../../../`
+- `../../`
+- `../`
+- sibling imports (for example, `./foo`)
+- index imports (`./`)
+- styles
+- unknown imports
 
 ### `prettier/`
 
