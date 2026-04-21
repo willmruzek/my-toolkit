@@ -33,8 +33,10 @@ Import sorting is limited to imports and groups them in this order:
 - `../../../`
 - `../../`
 - `../`
-- `./`
+- sibling imports (for example, `./foo`)
+- index imports (`./`)
 - styles
+- unknown imports
 
 ### `prettier/`
 
