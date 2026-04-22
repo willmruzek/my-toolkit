@@ -13,13 +13,22 @@
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
   },
   "exports": {
-    "./eslint": "./eslint/index.js"
+    "./eslint": "./eslint/index.js",
+    "./typescript/base": "./typescript/base.json",
+    "./typescript/frontend-lib": "./typescript/frontend-lib.json",
+    "./typescript/react-lib": "./typescript/react-lib.json",
+    "./typescript/react-app": "./typescript/react-app.json",
+    "./typescript/next-app": "./typescript/next-app.json",
+    "./typescript/tanstack-start-app": "./typescript/tanstack-start-app.json",
+    "./typescript/node-lib": "./typescript/node-lib.json",
+    "./typescript/node-app": "./typescript/node-app.json"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
   "peerDependencies": {
+    "@tsconfig/bases": "^1.0.23",
     "@eslint/js": "^9.0.0",
     "eslint": "^10.2.1",
     "eslint-plugin-perfectionist": "^4.15.1",
@@ -27,6 +36,7 @@
     "typescript-eslint": "^8.56.0"
   },
   "devDependencies": {
+    "@tsconfig/bases": "^1.0.23",
     "@eslint/js": "^9.0.0",
     "eslint": "^10.2.1",
     "eslint-plugin-perfectionist": "^4.15.1",

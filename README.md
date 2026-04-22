@@ -44,7 +44,16 @@ Reusable Prettier configuration (coming soon).
 
 ### `typescript/`
 
-Reusable TypeScript configurations (coming soon).
+Reusable TypeScript configurations:
+
+- `@willmruzek/my-toolkit/typescript/base`
+- `@willmruzek/my-toolkit/typescript/frontend-lib`
+- `@willmruzek/my-toolkit/typescript/react-lib`
+- `@willmruzek/my-toolkit/typescript/react-app`
+- `@willmruzek/my-toolkit/typescript/next-app`
+- `@willmruzek/my-toolkit/typescript/tanstack-start-app`
+- `@willmruzek/my-toolkit/typescript/node-lib`
+- `@willmruzek/my-toolkit/typescript/node-app`
 
 ## Getting Started
 
