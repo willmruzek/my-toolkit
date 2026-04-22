@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": ["./base.json", "@tsconfig/bases/node-lts"],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "noEmit": true
+  }
+}
