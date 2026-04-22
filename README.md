@@ -40,7 +40,7 @@ Import sorting is limited to imports and groups them in this order:
 
 ### `prettier/`
 
-Reusable Prettier configuration (coming soon).
+Reusable Prettier configuration.
 
 ### `typescript/`
 
