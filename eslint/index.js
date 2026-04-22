@@ -15,12 +15,20 @@ const disableTypeCheckedForJs = {
   extends: [tseslint.configs.disableTypeChecked],
 };
 
+const preferTypeOverInterface = {
+  files: ['**/*.ts', '**/*.tsx'],
+  rules: {
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+  },
+};
+
 export const recommended = tseslint.config(
   js.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylisticTypeChecked,
   typedLintingConfig,
   disableTypeCheckedForJs,
+  preferTypeOverInterface,
   importSortConfig,
 );
 
@@ -30,5 +38,6 @@ export const strict = tseslint.config(
   tseslint.configs.stylisticTypeChecked,
   typedLintingConfig,
   disableTypeCheckedForJs,
+  preferTypeOverInterface,
   importSortConfig,
 );
