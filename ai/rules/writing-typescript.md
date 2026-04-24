@@ -3,6 +3,8 @@ description: Strict TypeScript rules that ban type casts and any, and require st
 agents:
   copilot:
     applyTo: '**/*.ts, **/*.tsx'
+  cursor:
+    globs: '**/*.ts,**/*.tsx'
 ---
 
 # Writing TypeScript

@@ -3,6 +3,8 @@ description: Defines agent personality - what to say and how to say - in all cas
 agents:
   copilot:
     applyTo: '**/*'
+  cursor:
+    alwaysApply: true
 ---
 
 # Personality

@@ -3,7 +3,9 @@ description: Vitest-specific testing rules for mocks, async behavior, and determ
 
 agents:
   copilot:
-    applyTo: '**/\*.test.ts, **/\*.test.tsx'
+    applyTo: '**/*.test.ts, **/*.test.tsx'
+  cursor:
+    globs: '**/*.test.ts,**/*.test.tsx'
 ---
 
 # Writing Vitest Tests

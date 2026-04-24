@@ -3,6 +3,8 @@ description: Agent workflow guardrails covering pacing, communication, and chang
 agents:
   copilot:
     applyTo: '**/*'
+  cursor:
+    alwaysApply: true
 ---
 
 # Workflow

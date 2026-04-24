@@ -3,6 +3,8 @@ description: General test-writing principles covering structure, naming, isolati
 agents:
   copilot:
     applyTo: '**/*.test.ts, **/*.test.tsx'
+  cursor:
+    globs: '**/*.test.ts,**/*.test.tsx'
 ---
 
 # Writing Tests
