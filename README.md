@@ -58,3 +58,5 @@ Reusable TypeScript configurations:
 ## Getting Started
 
 This repo is currently in early stages.
+
+- [ ] Nix (devenv) environments

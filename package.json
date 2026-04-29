@@ -8,6 +8,11 @@
     "url": "git+https://github.com/willmruzek/my-toolkit.git"
   },
   "author": "Will Mruzek",
+  "files": [
+    "eslint/",
+    "prettier/",
+    "typescript/"
+  ],
   "type": "module",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
