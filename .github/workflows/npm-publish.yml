@@ -1,7 +1,7 @@
 name: npm publish
 
-# Reusable (**`workflow_call`**): reinstall from **pnpm cache**, **`pnpm publish`**. Trusted
-# Publishing workflow file on npmjs: **npm-publish.yml** (pnpm delegates to bundled **npm** for publish).
+# Reusable (**`workflow_call`**): reinstall, upgrade global **npm** to latest (OIDC / Trusted Publishing),
+# then **`pnpm publish`**. Trusted Publishing on npmjs: **npm-publish.yml**.
 
 on:
   workflow_call:
@@ -13,6 +13,7 @@ on:
 
 env:
   HUSKY: '0'
+  CI: 'true'
 
 jobs:
   publish:
@@ -41,6 +42,10 @@ jobs:
 
       - name: Install
         run: pnpm install --frozen-lockfile
+
+      # Node often ships npm 10.x; Trusted Publishing OIDC needs a current npm (pnpm invokes it on publish).
+      - name: Install latest npm
+        run: npm install -g npm@latest && npm --version
 
       - name: Publish to npm
         run: pnpm publish --access public --no-git-checks
