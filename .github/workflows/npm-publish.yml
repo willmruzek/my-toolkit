@@ -1,6 +1,7 @@
 name: npm publish
 
-# Reusable (**`workflow_call`**): reinstall from **pnpm cache** (same **Actions** scope as **`install`** in this run), then **`pnpm publish`**. Point npm Trusted Publishing here (**npm-publish.yml**).
+# Reusable (**`workflow_call`**): reinstall from **pnpm cache**, **`pnpm publish`**. Trusted
+# Publishing workflow file on npmjs: **npm-publish.yml** (pnpm delegates to bundled **npm** for publish).
 
 on:
   workflow_call:
@@ -23,19 +24,20 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.checkout_ref }}
 
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       - name: Set up Node.js
         # Omit registry-url — Trusted Publishing uses OIDC; registry-url implies NODE_AUTH_TOKEN.
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '22.14'
           cache: pnpm
+          package-manager-cache: false
 
       - name: Install
         run: pnpm install --frozen-lockfile
