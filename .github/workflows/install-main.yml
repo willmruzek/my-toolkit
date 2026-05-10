@@ -1,0 +1,19 @@
+# New commits on **main**: **`uses`** **`install.yml`** only (no tag-vs-version gate).
+
+name: Install (main)
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    uses: ./.github/workflows/install.yml
+    secrets: inherit
+    with:
+      checkout_ref: ${{ github.sha }}
+      verify_version_tag: ''

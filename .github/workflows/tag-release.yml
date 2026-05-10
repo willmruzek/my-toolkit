@@ -1,0 +1,41 @@
+# New v* tag: Install → GitHub Release → npm publish (each step is a separate reusable workflow).
+
+name: Release (tag)
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  install:
+    uses: ./.github/workflows/install.yml
+    secrets: inherit
+    permissions:
+      contents: read
+    with:
+      checkout_ref: ${{ github.ref_name }}
+      verify_version_tag: ${{ github.ref_name }}
+
+  github_release:
+    needs: install
+    uses: ./.github/workflows/create-github-release.yml
+    secrets: inherit
+    permissions:
+      contents: write
+    with:
+      checkout_ref: ${{ github.ref_name }}
+
+  publish:
+    needs: [install, github_release]
+    uses: ./.github/workflows/npm-publish.yml
+    secrets: inherit
+    permissions:
+      contents: read
+      id-token: write
+    with:
+      checkout_ref: ${{ github.ref_name }}

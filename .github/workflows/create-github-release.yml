@@ -1,0 +1,34 @@
+name: GitHub Release (create)
+
+# Reusable (**`workflow_call`**): checkout ref, **`gh release create`** (idempotent).
+
+on:
+  workflow_call:
+    inputs:
+      checkout_ref:
+        description: Tag or ref the GitHub Release is created from (normally v*).
+        required: true
+        type: string
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.checkout_ref }}
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN || github.token }}
+        run: |
+          tag="${{ inputs.checkout_ref }}"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release ${tag} already exists; skipping create."
+          else
+            gh release create "$tag" --title "$tag" --generate-notes --verify-tag
+          fi

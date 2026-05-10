@@ -1,0 +1,61 @@
+name: Install
+
+# Reusable (**`workflow_call`** only): checkout **`checkout_ref`**, optional tag vs **package.json** check when **`verify_version_tag`** is set, **Node** + **pnpm cache**, **Install**.
+#
+# Called from **`install-main.yml`** (commits on **`main`**) or **`tag-release.yml`**.
+
+on:
+  workflow_call:
+    inputs:
+      checkout_ref:
+        description: Git ref to check out (tag, branch, or SHA).
+        required: true
+        type: string
+      verify_version_tag:
+        description: If non-empty, require this tag to match package.json version.
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    name: Install
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: '0'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.checkout_ref }}
+
+      - name: Verify tag matches package.json version
+        if: ${{ inputs.verify_version_tag != '' }}
+        env:
+          RELEASE_TAG: ${{ inputs.verify_version_tag }}
+        run: |
+          pkg_version="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).version")"
+          expected="v${pkg_version}"
+          if [ "${RELEASE_TAG}" != "${expected}" ]; then
+            echo "Tag '${RELEASE_TAG}' must be '${expected}' (from package.json version ${pkg_version})."
+            exit 1
+          fi
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.14'
+          registry-url: https://registry.npmjs.org
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile

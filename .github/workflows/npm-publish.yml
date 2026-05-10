@@ -1,0 +1,46 @@
+name: npm publish
+
+# Reusable (**`workflow_call`**): reinstall from **pnpm cache** (same **Actions** scope as **`install`** in this run), then **`pnpm publish`**. Point npm Trusted Publishing here (**npm-publish.yml**).
+
+on:
+  workflow_call:
+    inputs:
+      checkout_ref:
+        description: Tag or SHA to checkout (same as tag release).
+        required: true
+        type: string
+
+env:
+  HUSKY: '0'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.checkout_ref }}
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.14'
+          registry-url: https://registry.npmjs.org
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Publish to npm
+        run: pnpm publish --access public --no-git-checks
