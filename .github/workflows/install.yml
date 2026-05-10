@@ -49,10 +49,10 @@ jobs:
         uses: pnpm/action-setup@v4
 
       - name: Set up Node.js
+        # Omit registry-url so setup-node does not configure NODE_AUTH_TOKEN-based auth.
         uses: actions/setup-node@v4
         with:
           node-version: '22.14'
-          registry-url: https://registry.npmjs.org
           cache: pnpm
 
       - name: Install
