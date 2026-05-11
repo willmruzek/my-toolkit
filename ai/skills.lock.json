@@ -2,15 +2,73 @@
   "version": 1,
   "skills": [
     {
+      "name": "agent-browser",
+      "repo": "https://github.com/vercel-labs/agent-browser.git",
+      "path": "skills/agent-browser",
+      "commit": "82eadcee41240b1c8477870f846bc8528e77a8a6",
+      "files": {
+        "SKILL.md": "00709861067d0cbb634609778b1be0469de6d6cef5293fcd24cbd469faaae42c"
+      },
+      "importedAt": "2026-05-11T11:28:35.166Z",
+      "updatedAt": "2026-05-11T11:28:35.166Z"
+    },
+    {
+      "name": "caveman",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/productivity/caveman",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "SKILL.md": "b4bb6fe3bf3da222993ca0aee5e7c6f5368b182dd30ce1172e8f8e3280eb7052"
+      },
+      "importedAt": "2026-05-11T11:38:14.149Z",
+      "updatedAt": "2026-05-11T11:38:14.149Z"
+    },
+    {
+      "name": "composition-patterns",
+      "repo": "https://github.com/vercel-labs/agent-skills.git",
+      "path": "skills/composition-patterns",
+      "commit": "b9c8ee0643d87d3c5a953d1e22382ff2ead39229",
+      "files": {
+        "AGENTS.md": "89e3ddd58fcf99a53a50e25dfd21b8cde1be5f10b7df6bacd3dfa6796932f516",
+        "metadata.json": "49262ed5cb4186f31ee980cf8d990be0170c51efed4908d0464a1cff9905bd05",
+        "README.md": "85915a43a6f0b4efe525e3cf6398dd866166da2025837c4460468a24a940da94",
+        "rules/_sections.md": "a174213b87e6911e2b766995a2cbaf8d1534057076e82fb79fe3f0ecb38047df",
+        "rules/_template.md": "587f7d16b0660eb61fee4a4d3d7df2b3077d6835de170602c7d6e60bee559131",
+        "rules/architecture-avoid-boolean-props.md": "007555ebb020f4d552582a2c4db194db71a1fd33094012e5187bcfa4f8c392d5",
+        "rules/architecture-compound-components.md": "f246af13dc269b521cf20eb8ad99a0cb645beac381c8c9b117262c34612c8457",
+        "rules/patterns-children-over-render-props.md": "7c45a0d21b3c4126a32cba916ee31adeae195386ad1dbbe6634aedb7457aa0ad",
+        "rules/patterns-explicit-variants.md": "8c19e596e61807549d01ce8c6954c6358199f97a8511c0c02c625ec0efda8c0e",
+        "rules/react19-no-forwardref.md": "881830adb7534c4b2d70db426556646ad9837f5478f744f35641f635ada22227",
+        "rules/state-context-interface.md": "09e73afbf9285fa416679cc864a287b9e8b821d0969272ab784295386d8c9bc3",
+        "rules/state-decouple-implementation.md": "76a8c1eb29a70d8996ab3f71260345af2f7bc89deab815a421d6c87c6591a9c3",
+        "rules/state-lift-state.md": "74c54038a6c554c748fe31cec673b80861b5d920b7553cf78cdf10d18b4b759b",
+        "SKILL.md": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3"
+      },
+      "importedAt": "2026-05-11T11:28:04.565Z",
+      "updatedAt": "2026-05-11T11:28:04.565Z"
+    },
+    {
+      "name": "conventional-commits",
+      "repo": "https://github.com/BbgnsurfTech/claude-skills-collection.git",
+      "path": "community/jamie-bitflight-claude-skills/conventional-commits",
       "commit": "01d3fafeca1133f841956b8b90b939fee92d71e7",
       "files": {
         "SKILL.md": "b8b09677015fcb6540fb56376741589838ca6ada277f928a1627a5a90f54b6e4"
       },
       "importedAt": "2026-04-13T11:02:24.817Z",
-      "name": "conventional-commits",
-      "path": "community/jamie-bitflight-claude-skills/conventional-commits",
-      "repo": "https://github.com/BbgnsurfTech/claude-skills-collection.git",
       "updatedAt": "2026-04-13T11:02:24.817Z"
+    },
+    {
+      "name": "diagnose",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/engineering/diagnose",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "scripts/hitl-loop.template.sh": "b2932630950e5210075bcd6f850e5accf30c101c5367b29eac3a29b4dd8084c8",
+        "SKILL.md": "28886402bbfa0470248086eab9106a103b964b76ae9496e63ff0c8a6761b6d13"
+      },
+      "importedAt": "2026-05-11T11:36:57.504Z",
+      "updatedAt": "2026-05-11T11:36:57.504Z"
     },
     {
       "name": "find-skills",
@@ -19,6 +77,350 @@
       "commit": "df0579f85cb8a360473c921e1343359006100d3c",
       "importedAt": "2026-04-11T15:12:13.808Z",
       "updatedAt": "2026-04-11T15:12:13.808Z"
+    },
+    {
+      "name": "frontend-design",
+      "repo": "https://github.com/anthropics/skills.git",
+      "path": "skills/frontend-design",
+      "commit": "f458cee31a7577a47ba0c9a101976fa599385174",
+      "files": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "b81e2ff87ed8fa4d6c377ccb127a7254c9e6a77e3ae94f21e6b514f7bb2945a0"
+      },
+      "importedAt": "2026-05-11T11:24:08.106Z",
+      "updatedAt": "2026-05-11T11:24:08.106Z"
+    },
+    {
+      "name": "github-actions-docs",
+      "repo": "https://github.com/xixu-me/skills",
+      "path": "skills/github-actions-docs",
+      "commit": "15caf2fcb09614749c8a4666d577021fe00712cc",
+      "files": {
+        "references/topic-map.md": "dd27d43c8a6400bb7501fe9630dc1152a24e7fdf481a35fa8d73a9a3b65ededf",
+        "SKILL.md": "85f3e313505340d09f6c5706aac096a29ff30a0ef11c04ce7a466a57175df33f"
+      },
+      "importedAt": "2026-05-11T11:33:53.081Z",
+      "updatedAt": "2026-05-11T11:33:53.081Z"
+    },
+    {
+      "name": "grill-me",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/productivity/grill-me",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "SKILL.md": "74147eb6010a65957efef2b9e0f0b3ff935c1def7fc117697151b1d0f3610556"
+      },
+      "importedAt": "2026-05-11T11:38:14.155Z",
+      "updatedAt": "2026-05-11T11:38:14.155Z"
+    },
+    {
+      "name": "grill-with-docs",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/engineering/grill-with-docs",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "ADR-FORMAT.md": "f1f36cd3f8d3b6474ddd5855da4e233bfc4ae1a1c5024909ccf11871819a41b2",
+        "CONTEXT-FORMAT.md": "8f6baaa3b1c91644bd7c600196b1aee781d5f525c7c345db8cdfbfb368329a05",
+        "SKILL.md": "c7176600a8bffc9f359102cb041b6686387618b8e1434ba484dd708d45df6d5e"
+      },
+      "importedAt": "2026-05-11T10:35:22.122Z",
+      "updatedAt": "2026-05-11T10:35:22.122Z"
+    },
+    {
+      "name": "handoff",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/productivity/handoff",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "SKILL.md": "77abcc4152081c7201242d220839ca865aca6c0a4c5b7e08f80c89c3a17d91a3"
+      },
+      "importedAt": "2026-05-11T11:38:14.157Z",
+      "updatedAt": "2026-05-11T11:38:14.157Z"
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/engineering/improve-codebase-architecture",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "DEEPENING.md": "9577485f4fc32c0267639a9151bb41c8af0f8f6086e4bf8b84d5b236e30604e9",
+        "INTERFACE-DESIGN.md": "678c3e34f1339015053212b3316bf0b676c70aa251050a0613667d4e755fb35e",
+        "LANGUAGE.md": "6feca2140439c54a774749e8367f18350899ff69c777144ed2248cd4407949fa",
+        "SKILL.md": "9e9b617b1c70d390e37dbfd1c031c11b3de850e2e3d01c4a2c2888bdb386a247"
+      },
+      "importedAt": "2026-05-11T11:22:09.680Z",
+      "updatedAt": "2026-05-11T11:22:09.680Z"
+    },
+    {
+      "name": "next-best-practices",
+      "repo": "https://github.com/vercel-labs/next-skills",
+      "path": "skills/next-best-practices",
+      "commit": "dc1de9caf7612d73f56a8dec3cb1bd6c9ec096b9",
+      "files": {
+        "async-patterns.md": "3a5e4a91d8399f0922c4a3b15b3490fbeb7396f976139a92311ea34cfa300584",
+        "bundling.md": "5496b337073985068c61527e0a89fbf7088faa47b9f92d2dd09a7d070cb48a7c",
+        "data-patterns.md": "538c8e24cd60eded9825a9461f2c644f5e6e5203d95aa4bf7c9486412bcc7aa1",
+        "debug-tricks.md": "62617a7cb131a2111f9f033617404fadb3458d56aeb0643f75aa5b2e43abf192",
+        "directives.md": "60b82ee24a8d43631da59beeec11f46ab25ce83c8000578f2222ecb6b6cadf4d",
+        "error-handling.md": "30b4e825b625df01d4a7c441591ac46782aab4f913432e96f408153d5fa62098",
+        "file-conventions.md": "0fed8bd429983c930c95eab3ab0254d4f2c128068fa290d758a057e3467252c3",
+        "font.md": "cb1f8d43e8fbca39839056b4621724837858bdace13e73bf3faf69abca318a21",
+        "functions.md": "39a8a418af501d7132d289f4b5dd6cae59d1bfa6fda941d502fc29bb0204e079",
+        "hydration-error.md": "d4baec07ab818045e284c45dd24422685ac934a38ea325139651f664a94eff57",
+        "image.md": "231a15ddea67fe0b965762cc89993ca5aaeb0c35c0e67767bd53ca138ec04c05",
+        "metadata.md": "19b00274877056f222f2284be5ade2479690e79e86af9a0466bc9d209506a95d",
+        "parallel-routes.md": "d8a1c2546d90af2b37e22a4a56a1978555af0d62a7683e349ce3e3287ab8a4af",
+        "route-handlers.md": "976a17de8024b3a65063350ae0fb6b9b617293f06358305800c858f58b015680",
+        "rsc-boundaries.md": "2b50b0310884609efc9f2620fbb81ef83a30a810544e449ff669c55935d5b920",
+        "runtime-selection.md": "7abb95f9af0f4769e7e9e91aba94a5787ed16e2c4009a140c8577a3a49828060",
+        "scripts.md": "fff3bc7530d5af472e2825fde69a26218c9e58acba74d60913f403baab4628a3",
+        "self-hosting.md": "f59e9afa0ff4dcbe20374dff13517ccec3ac6a239ef6d02e0ee8863cf9fc7082",
+        "SKILL.md": "c78f952d4e98bf3694856dbf70c03a6037d4e258ff3701f2642bfdf108549a25",
+        "suspense-boundaries.md": "63e2e7125b1a1a9d652dd301814ad7140f8ab3ad6726b2b53df76a89d9bc262a"
+      },
+      "importedAt": "2026-05-11T11:34:22.237Z",
+      "updatedAt": "2026-05-11T11:34:22.237Z"
+    },
+    {
+      "name": "react-best-practices",
+      "repo": "https://github.com/vercel-labs/agent-skills.git",
+      "path": "skills/react-best-practices",
+      "commit": "b9c8ee0643d87d3c5a953d1e22382ff2ead39229",
+      "files": {
+        "AGENTS.md": "fc93e7421177bbf869cce892bc60a6c83a4517d974bc3bf65c4e2c1e58a6ccf6",
+        "metadata.json": "c4e18bac3290fbe1b471a605867d4df68b03144ea26b8befdbe8f9d8fd124354",
+        "README.md": "9eafb2123d3b8b2aef41fba0db2648a3f4f49996f8c7c8bb2c86263befd8b48a",
+        "rules/_sections.md": "01c59969e4e867f0708c8f8ef9c6d87fab9a07d0586244f429ff84013db8a115",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/advanced-effect-event-deps.md": "55ed8f9f27a1bff803d6fa55828176207714b02123cbb97ddb8a90d88024a723",
+        "rules/advanced-event-handler-refs.md": "a3097edeecfb2ff6851cd66ed8cdf0617c3c88180504bee824aa6e75a215bbbc",
+        "rules/advanced-init-once.md": "3e4dc22173eb0e2b6dcf583e3babd862b8696328f8f59aee7c4d746c5bc05f6c",
+        "rules/advanced-use-latest.md": "8a3f64dfe5a77d1564248faf17fe662ae75b55d497a243cb30b38eb07ccbbf9a",
+        "rules/async-api-routes.md": "523338540d73427dc14c0cbb19f2741ebccdf8b105a7b2c1b33d2905cf237a42",
+        "rules/async-cheap-condition-before-await.md": "03107c1f70a293cd58a8abc5474c5548e20ea4efdf01b6d45aae7ad0ac1cb32c",
+        "rules/async-defer-await.md": "f3c142d090615abdcc99d31c123be37b31f0f1ed8d9ec9f7789a3bc6883ae0fb",
+        "rules/async-dependencies.md": "16ef469f877e30c6b8e1e1b4bc3e527312fa3c6318cb785a4eca186ea236131a",
+        "rules/async-parallel.md": "6d2f841896279e976dfcdc1ac89e70771ac188baadfd43c096b5706cb838b961",
+        "rules/async-suspense-boundaries.md": "de05fedac2eb7ae563b887b5a424464ec3dfaf84e5b7797467ebe2a796ac8afc",
+        "rules/bundle-analyzable-paths.md": "62090b5c815fd71bf1133dce754f51abc16a9456d0ccd025fd627de27726e92a",
+        "rules/bundle-barrel-imports.md": "e648f6d54525f07a691357040ca5bff6ea3424788a91ff63812adb29622a671b",
+        "rules/bundle-conditional.md": "09c8259c3efb04fc0abb8e412ccbda217c222ae8118516283e571c995fe3a7d4",
+        "rules/bundle-defer-third-party.md": "3719fb47b191e8db4fe22686ec88448ad5af9e6838585425abbe103d0b642e37",
+        "rules/bundle-dynamic-imports.md": "401817a7369f315fc5a68a1095742ff7d53d0461906880dc9d64a41495ee1986",
+        "rules/bundle-preload.md": "d1f7cc28da7cd5ab249acd287edc5b761afcfb194e9cb62cd44c5f3543db2de2",
+        "rules/client-event-listeners.md": "242a873349febc1ce685e85617994784dbab92c2eaa68aed7fed5a83e7680e93",
+        "rules/client-localstorage-schema.md": "0fb7cdf9dc93fdf22f87e3669f953fb9d4ac9b0be42eec4a29fe9a2560610b88",
+        "rules/client-passive-event-listeners.md": "1f35016f9053de69e884ee9be00654e37979c2ca85f5e57764dc2626ff7acb4b",
+        "rules/client-swr-dedup.md": "644652c39c6cc00de8d1c77a7273612e868dc3f7edda30764164c12ec0f764a3",
+        "rules/js-batch-dom-css.md": "480b891b9eaf96e929dc1e964274a4828e3a78009b7d00ccd965a0d425215959",
+        "rules/js-cache-function-results.md": "3daaa11d24f4295cb6be8bc6f407f2ce83cc7b5bd1f0e68891ea8ab835721dc7",
+        "rules/js-cache-property-access.md": "73e47431e74878a927061bf0ddc7cd91a7556cb35d2573f3421e82300d9ae311",
+        "rules/js-cache-storage.md": "11b826b0433898c1ece2d3547010d8e77db9fb240185748c45db91493de9b6cc",
+        "rules/js-combine-iterations.md": "71add08aeeb43091d4ff4c0b2842cce8b4bdef8ad3e732cc034bb5a84827e746",
+        "rules/js-early-exit.md": "925ce5ce87f3347186ca62212f29cc6baa2b8c85a96d2720ad07c3d0abf781c0",
+        "rules/js-flatmap-filter.md": "9e5b166a41914d975bef7635467f8fb32cd98b5c3126c0bc6f163490812fb5f0",
+        "rules/js-hoist-regexp.md": "f9e9aef2f7c2307dd7310f283df85dcada45fc43e9bb941b0c3aa414dec21ec4",
+        "rules/js-index-maps.md": "5df1bdc2cfabb2c98abd55d26762e5c18189535c2e686184f426082e62920391",
+        "rules/js-length-check-first.md": "8b54a311c826b299272f29187fc58bc55772a04c4a72eeb29456ee96dc9fc624",
+        "rules/js-min-max-loop.md": "87dfb67e2f39df6ad8bcfb5b78c5fb364d3c07554ad188a202408d99f3763421",
+        "rules/js-request-idle-callback.md": "ee08f83905b4011abbc33d594033157d77561b5bbd9b36b04f0f409581ffec32",
+        "rules/js-set-map-lookups.md": "a7fd781a6ba9ad49065961b6f9a90ef486bf6b648390e1a08704025f98e1642b",
+        "rules/js-tosorted-immutable.md": "d0a5e1b0fec48a0a81397957e2f068e224329f7c42cb5feeed8aae6fa64025e8",
+        "rules/rendering-activity.md": "1e5e7eaf3555e61d6a2e900089c676527d26259501db5594f59544b6c664f85a",
+        "rules/rendering-animate-svg-wrapper.md": "9c6ae0ca7a51434e803887c64cded760956579a1452ccb80a461a03f9c937c77",
+        "rules/rendering-conditional-render.md": "2ec2fa23c4148285144687050c52369adba3da2fbe3d486f8d3e0aad8f06f2bc",
+        "rules/rendering-content-visibility.md": "64eee6d5b916fe74df33363994b27fc7f71bea3bcedc7ee04bda23107ca3e6e4",
+        "rules/rendering-hoist-jsx.md": "93b229560fae92005ed9a2a829064607b39b2e984e92d221d05b2d41df2b7c0e",
+        "rules/rendering-hydration-no-flicker.md": "dc7ab358c67c177bca6e6f360fbc935ebe4efa928c0ba3ebd3f9f3d9e2000ca3",
+        "rules/rendering-hydration-suppress-warning.md": "915bacb934e2927d84b37a3f3d225a47b309ac8f9e494ed2bcb66ce07c5676a2",
+        "rules/rendering-resource-hints.md": "351b1095d641717b930f1b2253282b7120af3023bc74e06c17675168d4286864",
+        "rules/rendering-script-defer-async.md": "4cea07b7875ba7fc2c7465ff23b63a2bb334f90aaf2d9293d38d67b05fdb32ab",
+        "rules/rendering-svg-precision.md": "ed468533f6e95f622859c884b122cf21f9f593ed6bb3d500a54de4b9f9bcb9fb",
+        "rules/rendering-usetransition-loading.md": "3a1249c3f13026b6f54ab5712c388df219d6af01b12aa542749acd99a46f4bc1",
+        "rules/rerender-defer-reads.md": "234050a77faf50cb306be10a9e15bd4421134ab5907e75f13e6d78e2bd262dc9",
+        "rules/rerender-dependencies.md": "17eb5830956fb56486fd3cfc7431f5849d39751730c05ad9e77dd4f0c27169c5",
+        "rules/rerender-derived-state-no-effect.md": "cb11ec76f50aa7b6847269f02d79b120c889a30d9ecd2c1d578f75144419c77a",
+        "rules/rerender-derived-state.md": "1c326bb67b01fb084eb00c8911b0a7cff54681c2315b629f88e49b64eaa6481d",
+        "rules/rerender-functional-setstate.md": "5e68df6b2ae8058e67f476ff1ac67bde159f5a9d18df439e46eabcdeb7b52e58",
+        "rules/rerender-lazy-state-init.md": "4ae844740f266fc8cbf050701230286624a2440ec5be67b9a63d9edc3c580573",
+        "rules/rerender-memo-with-default-value.md": "81c47476564ad8a79fc68fc442734255ca7d6829424359464503fda0a9f9a0dd",
+        "rules/rerender-memo.md": "1f258990c2f27ff6256b3cc5c43300631bb3f0d81f749aed08d07fcdcc131dd1",
+        "rules/rerender-move-effect-to-event.md": "abc2cbf167bee056743023351e96806a411d3398da8802093620aecf0721f029",
+        "rules/rerender-no-inline-components.md": "1cc32907a770272524ba682eef9e7efdd8ad4533b6f89b718a1fcd7d1d0eb6a3",
+        "rules/rerender-simple-expression-in-memo.md": "5bdcf2d1558ba5204e643c887b7b4060f89630969425651eb68e96427d97f800",
+        "rules/rerender-split-combined-hooks.md": "6f45d703343484ef9acef9388397f3642966ae6a5a258899a0cf1f9977cfbf6c",
+        "rules/rerender-transitions.md": "60f4033909a62df5e5b8c601494f9e50a562e2f8c1c2d81eac24f38142265f1c",
+        "rules/rerender-use-deferred-value.md": "8c3579576a61a949884167745dcfaf1d5426ba305cc61fd0a79602d70fda4909",
+        "rules/rerender-use-ref-transient-values.md": "f1a649af9d1d0b5c762f6c9c4c1c70c90d7df82aa10296ee87aadb78c1b76c54",
+        "rules/server-after-nonblocking.md": "d0b8d24a3db9f0f65f9e2bddbf230b0e03a5f60e1229d93a4a18f5e7a991c7c2",
+        "rules/server-auth-actions.md": "a2ca8aa102839251c7971ec784560fab943c20b36fe6f80365d4110c13260c23",
+        "rules/server-cache-lru.md": "1924b64561841923b88a657085097a0aeba3e0ba2d5470b9f5c15cc10d6ae70f",
+        "rules/server-cache-react.md": "fddeea6c870bb3da4134b61d54b7d09b83d2603f929b7547cd3dc1dc269edd5c",
+        "rules/server-dedup-props.md": "c2747424cdac46be62f835f245a0aa887b0090b416d28e2ac8676702645eeb37",
+        "rules/server-hoist-static-io.md": "5abea4dd882b13661bd5f7dfb93f9e547d5f08176c61c448ade91b210ed5d49f",
+        "rules/server-no-shared-module-state.md": "4d869bf1cd2f1632e5ca4c0e64b1cf0e71c5f5a0f940bc8a22174d205e735ed7",
+        "rules/server-parallel-fetching.md": "569a2e9fc04f9606686cd75c5894ef8781b502786a7fffe241396846c7733472",
+        "rules/server-parallel-nested-fetching.md": "ad5d9656984d4a959997a2367bf59cc6632297b4634a1dd13a087939d83f30b3",
+        "rules/server-serialization.md": "f4c7d68b29c82381baad059c4a7f09e868e71ec9c3115a26ad3ae7d24c0dfe1f",
+        "SKILL.md": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355"
+      },
+      "importedAt": "2026-05-11T11:25:47.902Z",
+      "updatedAt": "2026-05-11T11:25:47.902Z"
+    },
+    {
+      "name": "react-native-skills",
+      "repo": "https://github.com/vercel-labs/agent-skills.git",
+      "path": "skills/react-native-skills",
+      "commit": "b9c8ee0643d87d3c5a953d1e22382ff2ead39229",
+      "files": {
+        "AGENTS.md": "72996343b8260800fbeb9af63ddaed91f14b65dc547e0922f9f8e9bd72076cbf",
+        "metadata.json": "59ee2274cadbd95b2220727028f0dbc26d3e0251e7937226edc9e7640756ba21",
+        "README.md": "d60d7623005a833b928be6a109ed9d14dea43d7217fb534e8f2e4de5fc1f0ddf",
+        "rules/_sections.md": "21d7445e92bd7d393b420118c3fb9ebbf30aaf123a15143afb6c0b1b562cfdfd",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/animation-derived-value.md": "689228e9d59227934f296563963951aa9368be0afb2a188f650de161203b1862",
+        "rules/animation-gesture-detector-press.md": "69408d4be669e74689d865c5f50a22fc3a802d521fe493371761abd20526e58e",
+        "rules/animation-gpu-properties.md": "f885e4179445da27cbc225e0a4aa3ed9016fc3507ca6f864392ba7a9d0bd7516",
+        "rules/design-system-compound-components.md": "dcb10900a58fcf57cca2e27c062d02df2325a7949e08fb45e9e05cc2b132b1a6",
+        "rules/fonts-config-plugin.md": "b92568774064a604e7a479d4c8d7263aed5609740e9161d2f2764bfff761905d",
+        "rules/imports-design-system-folder.md": "aa6337f7f2869a46a9141ec65e02c3da5c3bf051023899b82e0f0aef5bff8423",
+        "rules/js-hoist-intl.md": "b4b08622465ffcd5e5961878eb8c6d7359aa242d16c990b59941c9111962fe46",
+        "rules/list-performance-callbacks.md": "db800e9dfe0080eb4954b96e2a362ee8344d08e08b1ed06bc8059450f3e6f0dd",
+        "rules/list-performance-function-references.md": "b54470e41d578b207ee3223f6853efb7fbf8e5f83d9aecf8da16989072f99544",
+        "rules/list-performance-images.md": "e88f16ac113c29230d674b7aa2c66c31d5772a74b1ea378d48a97b1143fe6c19",
+        "rules/list-performance-inline-objects.md": "e2a80aac0f29c6abaf0163c1cc273d09cc8a0030ec077ca2022bbf5c309e4625",
+        "rules/list-performance-item-expensive.md": "a68cc8ec5dba3c55761bd5df9dfd3d98485f63076868d3e03af15f1e58907ce3",
+        "rules/list-performance-item-memo.md": "38ec1d149ee485434d11c2b9e2101dfc914afadae4a0738ca905f26b05f708c1",
+        "rules/list-performance-item-types.md": "eed225f4e9e504bfa7db01f5395d1402545cc47de8adf1829a9408cd5d158cf6",
+        "rules/list-performance-virtualize.md": "98cad308118acb4d6e8e975c0168ce56e2d48ca52ed47f23bc9a30667c066ada",
+        "rules/monorepo-native-deps-in-app.md": "8368b109027fcec1b8a81bfb99718aef2b64edaba77107f73d7c465cc5a14217",
+        "rules/monorepo-single-dependency-versions.md": "61c01b9eaab1e319bf078204231fb573bdfea3c43a6eb99e7ef73ee95d474ccc",
+        "rules/navigation-native-navigators.md": "6642dedb57e72f0b56df5fbc3d5b8aaa91fc4456932c12712cfd076d393f32c6",
+        "rules/react-compiler-destructure-functions.md": "8048926a4fa3fbd28fc0ecf4ba4c383a2f0ed06c2fd7330dd4a15d7f4e548044",
+        "rules/react-compiler-reanimated-shared-values.md": "3174303a72b6849ff0eda5cd9f9650f26baa5f31ed28d35a75076af714fb2ffc",
+        "rules/react-state-dispatcher.md": "7ec5b653e3ff8d9ca97d8d66981cce5590c0e49fa79ab708fd6324542b588870",
+        "rules/react-state-fallback.md": "eb76e386d71680bfdfc0ab64dba1221f4d3d0fdcb4980bb4a871381d58e9e58b",
+        "rules/react-state-minimize.md": "31b989de61defda1c61d8578c4700efd64a427218c3f3dbb7062a1666e1cbe43",
+        "rules/rendering-no-falsy-and.md": "7300fa45ac3a4968db144727a21052421bc62de9b5e9f6f59e28bd16d2fff001",
+        "rules/rendering-text-in-text-component.md": "fc67897b6126b6b5574f4d284a6c5b2282528fe89de8ec08e6cfd2a86ab5b235",
+        "rules/scroll-position-no-state.md": "70aa1ee679e755556d7b01b326431fe898d3c23ddba40d0da6bdac23c87a1525",
+        "rules/state-ground-truth.md": "9f3efc73d2e66a5deb3199c9774f42524cd6a0f69784af38301946be5d747cb5",
+        "rules/ui-expo-image.md": "c3c13cce3dd2cc7f8a9b4861e5743af98f62e28f5699f72f492e79a335cfae55",
+        "rules/ui-image-gallery.md": "b34d1ba03710ed9622187716541ae618968e7d03bc28895c2ac918d3cc5853f1",
+        "rules/ui-measure-views.md": "170d058abc4900ea9e851e54f5e8b437ffffc2c9d3847ae35e30a515c8990c3d",
+        "rules/ui-menus.md": "5964adbecfe9aeb28d736a4eaacec6469a1c4ca3f48779d243eb38b6d181cfe9",
+        "rules/ui-native-modals.md": "d803493b3046ad31cbb2c189f1fffb948fd0055050e3c322589bd548421e23a8",
+        "rules/ui-pressable.md": "52cdbad127d713d7d32c59ef74ab1bbd6dca211edc9b25993453f7f4545e79fa",
+        "rules/ui-safe-area-scroll.md": "3dd776caef2344d73529010940b50042861d06d31a192122a4df64bc06aed0e8",
+        "rules/ui-scrollview-content-inset.md": "89e4bbe5e9a602660f4155e9d4c0dee09db1adf21c73f47213cd67ec896e5a13",
+        "rules/ui-styling.md": "cdef4d8b1a097b844e5992ab78e66a2dc604faf1e90f8d325a0eb116e8ef6a7e",
+        "SKILL.md": "4012750a5ccbe064ca04af3835d5d1b011979d2d09d9b6df1c8128fac58e0a66"
+      },
+      "importedAt": "2026-05-11T11:30:31.272Z",
+      "updatedAt": "2026-05-11T11:30:31.272Z"
+    },
+    {
+      "name": "seo-audit",
+      "repo": "https://github.com/coreyhaines31/marketingskills",
+      "path": "skills/seo-audit",
+      "commit": "906c2fb28e471c5b1d149d4159ec5ddb40b7c364",
+      "files": {
+        "evals/evals.json": "fa7fa4b047a4aceaf0247c366dfca5fe371e2adfde97e32c667c727c3e840861",
+        "references/ai-writing-detection.md": "f1e273f56ce7e2215ff218bf903680ddcec0fd026ab90c3ebfb3439ed0edfaa4",
+        "references/international-seo.md": "d2fc76f40eccc422ae0f1d7e5b770095e89a045f38e1d0370811203da57996ff",
+        "SKILL.md": "f3280a44acae9d138570e742db51076e3e9d9e1c9c7673dbb992693cc27f9d00"
+      },
+      "importedAt": "2026-05-11T11:34:07.092Z",
+      "updatedAt": "2026-05-11T11:34:07.092Z"
+    },
+    {
+      "name": "shadcn",
+      "repo": "https://github.com/shadcn/ui.git",
+      "path": "skills/shadcn",
+      "commit": "8ca30ed32cc1d8971bc0902ccf3b14abe71abbb9",
+      "files": {
+        "agents/openai.yml": "35db91b1eef58b2abe01da9b88577de5a44e233b740cd93d692ddeeadd2afe4d",
+        "assets/shadcn-small.png": "0ecc62d682727f68fc4937eed19960c706714fa084d44f63028d611ae02bf3d7",
+        "assets/shadcn.png": "7d60ad6fec4d89a0d44ba5a3c9283d2fea0047af5467f9227040e20d927d39b7",
+        "cli.md": "870161eac345ef1c7f158ca98559e3847a530ce5f799da3476e24fc4a9472f60",
+        "customization.md": "84c1d47168c4b8adb5840e4af30a4e373ae3377c1110478c8974f398dd63f5ba",
+        "evals/evals.json": "97ebb931d690578ee64e445d84f406be2a8799812d38d3cb1bb216e68291eb2b",
+        "mcp.md": "f391dc7acbe609dd3fe04b1ae5cd2005ded6b6d51a238201ea41d7d16a6da26a",
+        "rules/base-vs-radix.md": "2b2deb47d004285220c1fc6b38bb2edc2d0ccbcdafd031b0b189d5d8ed0d1ba8",
+        "rules/composition.md": "de068e5aa5351dd8e4af7bfb7a6333302445c15527eaeee521d8591e95e7d709",
+        "rules/forms.md": "29593e14381e34626f8e0e9c15c59f3394b92a0623af6a6ec94585400123853c",
+        "rules/icons.md": "d4a58266648872d9ee07d0c2368843a1cb88b8253b7f528dd7bda9d68b6c2535",
+        "rules/styling.md": "4a71da3fc53d8efbedac26946e5b13b53d1edf71583d62088ccc2b8cc7b5fef7",
+        "SKILL.md": "c5a5c3a8e380ab7d49369c68a715b2da6b1bcc449898cfdf787bbab8cb13a5d9"
+      },
+      "importedAt": "2026-05-11T11:29:47.523Z",
+      "updatedAt": "2026-05-11T11:29:47.523Z"
+    },
+    {
+      "name": "skill-creator",
+      "repo": "https://github.com/anthropics/skills.git",
+      "path": "skills/skill-creator",
+      "commit": "f458cee31a7577a47ba0c9a101976fa599385174",
+      "files": {
+        "agents/analyzer.md": "bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a",
+        "agents/comparator.md": "fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e",
+        "agents/grader.md": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+        "assets/eval_review.html": "ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452",
+        "eval-viewer/generate_review.py": "fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb",
+        "eval-viewer/viewer.html": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "references/schemas.md": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f",
+        "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scripts/aggregate_benchmark.py": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+        "scripts/generate_report.py": "13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453",
+        "scripts/improve_description.py": "87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80",
+        "scripts/package_skill.py": "1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f",
+        "scripts/quick_validate.py": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+        "scripts/run_eval.py": "43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f",
+        "scripts/run_loop.py": "7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21",
+        "scripts/utils.py": "3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1",
+        "SKILL.md": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
+      },
+      "importedAt": "2026-05-11T11:28:59.615Z",
+      "updatedAt": "2026-05-11T11:28:59.615Z"
+    },
+    {
+      "name": "tdd",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/engineering/tdd",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "deep-modules.md": "f2123700bf953db1740625686c75bdd145efd486357c47c6818c869fee657a32",
+        "interface-design.md": "764c5ff0e3fa6b4ab7095eb65ccc7201e090baf19fa16051dfdb72c06d27417d",
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "refactoring.md": "54fced22dd1911b7094c3fe7979b7c1a40d40be307482c4adf7dc0588f27d6cc",
+        "SKILL.md": "af059705061156fd4845ddbb736fe92b564118ac5f03551e09ef9e8f6d970638",
+        "tests.md": "e12182f5c4c6a844b7c6ab4b8d2623b642aaaae5460fe58ed087efd4f3d5fb8a"
+      },
+      "importedAt": "2026-05-11T11:22:40.858Z",
+      "updatedAt": "2026-05-11T11:22:40.858Z"
+    },
+    {
+      "name": "web-design-guidelines",
+      "repo": "https://github.com/vercel-labs/agent-skills.git",
+      "path": "skills/web-design-guidelines",
+      "commit": "b9c8ee0643d87d3c5a953d1e22382ff2ead39229",
+      "files": {
+        "SKILL.md": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+      },
+      "importedAt": "2026-05-11T11:27:25.961Z",
+      "updatedAt": "2026-05-11T11:27:25.961Z"
+    },
+    {
+      "name": "zoom-out",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "path": "skills/engineering/zoom-out",
+      "commit": "9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a",
+      "files": {
+        "SKILL.md": "2a6894c7f9b1c9c55f451c625a834c4f377e217b623a85280e55db5fe9cacf48"
+      },
+      "importedAt": "2026-05-11T11:36:57.511Z",
+      "updatedAt": "2026-05-11T11:36:57.511Z"
     }
   ]
 }
